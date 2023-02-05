@@ -45,7 +45,15 @@ function game() {
 }
 
 function test(n) {
-    
+    const target = n;
+    let result = 0;
+    for (let i=1; i<= target; i++) {
+      const prize = game();
+      if (prize == "Car!") {
+        result += 1;
+      }
+    }
+    return result;
 }
 
-console.log(game());
+console.log(test(10000));
