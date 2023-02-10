@@ -53,7 +53,8 @@ function test(n) {
         result += 1;
       }
     }
-    return result;
+    const percent = (result / n) * 100;
+    return percent;
 }
 
 console.log(test(10000));
