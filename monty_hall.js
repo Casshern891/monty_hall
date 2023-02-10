@@ -53,8 +53,8 @@ function test(n) {
         result += 1;
       }
     }
-    const percent = (result / n) * 100;
-    return percent;
+    const percent = ((result / n) * 100).toFixed(1);
+    console.log(`${percent}% of ${n} games were won!`);
 }
 
-console.log(test(10000));
+test(1000);
